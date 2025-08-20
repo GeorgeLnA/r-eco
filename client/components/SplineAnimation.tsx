@@ -2,13 +2,11 @@ import React, { Suspense } from 'react';
 import Spline from '@splinetool/react-spline';
 
 interface SplineAnimationProps {
-  sceneUrl: string;
   className?: string;
   style?: React.CSSProperties;
 }
 
 const SplineAnimation: React.FC<SplineAnimationProps> = ({ 
-  sceneUrl, 
   className = "", 
   style = {} 
 }) => {
@@ -23,7 +21,7 @@ const SplineAnimation: React.FC<SplineAnimationProps> = ({
         </div>
       }>
         <Spline 
-          scene={sceneUrl}
+          scene="https://prod.spline.design/n11sHPvkht7KdT5b/scene.splinecode"
           style={{
             width: '100%',
             height: '100%',

@@ -13,6 +13,14 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
+// Import product images
+import ashpImage from "../assets/ashp.png";
+import powerwallImage from "../assets/powerwall.png";
+import biomassBoilerImage from "../assets/biomass-boiler.png";
+import homeChargerImage from "../assets/home-charger.png";
+import solarPanelImage from "../assets/solar-panel.png";
+import solarThermalImage from "../assets/solar-thermal.png";
+
 export default function Index() {
   const [selectedStep, setSelectedStep] = useState(1);
   
@@ -92,7 +100,7 @@ export default function Index() {
               {
                 key: "ashp",
                 title: "Air Source Heat Pumps",
-                image: "/ashp.png",
+                image: ashpImage,
                 blurb:
                   "A full central heating solution that provides heating and hot water by transferring heat between outdoor air and your home.",
                 tags: ["Green Homes Grant", "Renewable Heat Incentive"],
@@ -100,7 +108,7 @@ export default function Index() {
               {
                 key: "battery",
                 title: "Battery Storage",
-                image: "/powerwall.png",
+                image: powerwallImage,
                 blurb:
                   "Store solar electricity to power your home at night or during outages and make the most of smart tariffs.",
                 tags: ["Certified Tesla Powerwall Installer"],
@@ -108,7 +116,7 @@ export default function Index() {
               {
                 key: "biomass",
                 title: "Biomass Boilers",
-                image: "/biomass-boiler.png",
+                image: biomassBoilerImage,
                 blurb:
                   "A carbon-neutral heating and hot water solution using wood pellets, chips or logs.",
                 tags: ["Green Homes Grant", "Renewable Heat Incentive"],
@@ -116,7 +124,7 @@ export default function Index() {
               {
                 key: "ev",
                 title: "EV Charging",
-                image: "/home-charger.png",
+                image: homeChargerImage,
                 blurb:
                   "Charge at home conveniently and take advantage of smart or off‑peak tariffs for the lowest running costs.",
                 tags: ["Smart Meter Ready"],
@@ -124,7 +132,7 @@ export default function Index() {
               {
                 key: "pv",
                 title: "Solar PV",
-                image: "/solar-panel.png",
+                image: solarPanelImage,
                 blurb:
                   "Generate clean electricity for your home and sell surplus back to the grid through the Smart Export Guarantee.",
                 tags: ["Smart Export Guarantee"],
@@ -132,7 +140,7 @@ export default function Index() {
               {
                 key: "thermal",
                 title: "Solar Thermal",
-                image: "/solar-thermal.png",
+                image: solarThermalImage,
                 blurb:
                   "Collect sunlight to heat water for your home, reduce boiler runtime and cut gas usage.",
                 tags: ["Green Homes Grant", "Renewable Heat Incentive"],
@@ -434,7 +442,6 @@ export default function Index() {
                     <div className="w-full h-[700px] rounded-xl overflow-hidden flex items-center justify-center">
                       <div className="w-full h-full flex items-center justify-center mx-auto">
                         <SplineAnimation 
-                          sceneUrl="https://prod.spline.design/Copl6CwZnbdYen42/scene.splinecode"
                           className="w-full h-full"
                         />
                       </div>
