@@ -4,6 +4,14 @@ import SplineAnimation from "../components/SplineAnimation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function Index() {
   const [selectedStep, setSelectedStep] = useState(1);
@@ -60,6 +68,130 @@ export default function Index() {
             <Button className="bg-[#588157] text-white px-10 py-6 rounded-full text-base font-medium hover:opacity-90 transition-opacity">
               Free Consultation
             </Button>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Products Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="mb-6">
+            <span className="block text-xs tracking-widest text-tryba-dove-gray uppercase mb-2">Technology</span>
+            <h2 className="text-[#588157] text-4xl lg:text-5xl font-normal leading-tight">
+              To harness the elements
+            </h2>
+            <p className="text-tryba-dove-gray text-lg mt-4 max-w-3xl">
+              Renewable resources provide a reliable and sustainable supply of energy — and there are many
+              technologies that can work beautifully together in your home.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                key: "ashp",
+                title: "Air Source Heat Pumps",
+                image: "/ashp.png",
+                blurb:
+                  "A full central heating solution that provides heating and hot water by transferring heat between outdoor air and your home.",
+                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+              },
+              {
+                key: "battery",
+                title: "Battery Storage",
+                image: "/powerwall.png",
+                blurb:
+                  "Store solar electricity to power your home at night or during outages and make the most of smart tariffs.",
+                tags: ["Certified Tesla Powerwall Installer"],
+              },
+              {
+                key: "biomass",
+                title: "Biomass Boilers",
+                image: "/biomass-boiler.png",
+                blurb:
+                  "A carbon-neutral heating and hot water solution using wood pellets, chips or logs.",
+                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+              },
+              {
+                key: "ev",
+                title: "EV Charging",
+                image: "/home-charger.png",
+                blurb:
+                  "Charge at home conveniently and take advantage of smart or off‑peak tariffs for the lowest running costs.",
+                tags: ["Smart Meter Ready"],
+              },
+              {
+                key: "pv",
+                title: "Solar PV",
+                image: "/solar-panel.png",
+                blurb:
+                  "Generate clean electricity for your home and sell surplus back to the grid through the Smart Export Guarantee.",
+                tags: ["Smart Export Guarantee"],
+              },
+              {
+                key: "thermal",
+                title: "Solar Thermal",
+                image: "/solar-thermal.png",
+                blurb:
+                  "Collect sunlight to heat water for your home, reduce boiler runtime and cut gas usage.",
+                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+              },
+            ].map((product) => (
+              <Dialog key={product.key}>
+                <DialogTrigger asChild>
+                  <button className="group text-left bg-white border border-tryba-alto rounded-xl p-6 hover:shadow-md transition-shadow">
+                    <div className="relative overflow-hidden rounded-xl mb-6 bg-white">
+                      <img
+                        src={product.image}
+                        alt={product.title}
+                        className="w-full h-56 object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="text-2xl font-normal text-black mb-2">{product.title}</h3>
+                    <p className="text-tryba-dove-gray mb-4 text-sm">
+                      {product.blurb}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {product.tags.map((t) => (
+                        <span key={t} className="inline-flex items-center gap-2 bg-tryba-cyan-light text-tryba-aqua-deep px-2 py-1 rounded text-xs">
+                          <span className="w-1.5 h-1.5 rounded-full bg-tryba-aqua-deep" />
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl">{product.title}</DialogTitle>
+                    <DialogDescription className="text-base">
+                      {product.blurb}
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-56 object-contain bg-white rounded-lg"
+                    />
+                    <div className="space-y-3">
+                      {[
+                        "Professional design & installation",
+                        "MCS certified quality",
+                        "Ongoing maintenance & support",
+                      ].map((item) => (
+                        <div key={item} className="flex items-start gap-3">
+                          <Check className="w-5 h-5 text-[#588157] mt-1" />
+                          <span className="text-tryba-dove-gray">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
+            ))}
           </div>
         </div>
       </section>
