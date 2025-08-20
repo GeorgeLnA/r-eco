@@ -80,49 +80,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Responsible Solutions Section */}
-      <section className="py-20 bg-tryba-cyan-light">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#588157] rounded-full flex items-center justify-center mx-auto mb-6">
-                <Leaf className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-tryba-cyprus text-2xl font-normal leading-tight mb-4">
-                Responsible solutions
-              </h3>
-              <p className="text-tryba-dove-gray text-lg leading-relaxed">
-                Net-positive impact on humanity and the Earth.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#588157] rounded-full flex items-center justify-center mx-auto mb-6">
-                <Home className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-tryba-cyprus text-2xl font-normal leading-tight mb-4">
-                Effective energy systems
-              </h3>
-              <p className="text-tryba-dove-gray text-lg leading-relaxed">
-                Practical solutions to fit your requirements and budget.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#588157] rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-tryba-cyprus text-2xl font-normal leading-tight mb-4">
-                Competent & organised
-              </h3>
-              <p className="text-tryba-dove-gray text-lg leading-relaxed">
-                40+ years combined experience in renewable energy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Products Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -294,8 +251,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-
 
       {/* R-ECO Values Section */}
       <section className="py-20">
