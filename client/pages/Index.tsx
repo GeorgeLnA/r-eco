@@ -80,6 +80,55 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Benefits Section */}
+      <section className="border-b border-tryba-alto py-6">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="flex items-center gap-6">
+              <div className="w-8 h-8 flex-shrink-0">
+                <Car className="w-8 h-8 text-[#588157]" />
+              </div>
+              <div>
+                <h3 className="text-[#588157] text-xl font-medium mb-1">
+                  Responsible solutions
+                </h3>
+                <p className="text-tryba-dove-gray text-sm">
+                  Net-positive impact on humanity and the Earth.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-6">
+              <div className="w-8 h-8 flex-shrink-0">
+                <Home className="w-8 h-8 text-[#588157]" />
+              </div>
+              <div>
+                <h3 className="text-[#588157] text-xl font-medium mb-1">
+                  Effective energy systems
+                </h3>
+                <p className="text-tryba-dove-gray text-sm">
+                  Practical solutions to fit your requirements and budget.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-6">
+              <div className="w-8 h-8 flex-shrink-0">
+                <Leaf className="w-8 h-8 text-[#588157]" />
+              </div>
+              <div>
+                <h3 className="text-[#588157] text-xl font-medium mb-1">
+                  Competent & organised
+                </h3>
+                <p className="text-tryba-dove-gray text-sm">
+                  40+ years combined experience in renewable energy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -203,54 +252,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="border-b border-tryba-alto py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Car className="w-8 h-8 text-[#588157]" />
-              </div>
-              <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Responsible solutions
-                </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  Net-positive impact on humanity and the Earth.
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Home className="w-8 h-8 text-[#588157]" />
-              </div>
-              <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Effective energy systems
-                </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  Practical solutions to fit your requirements and budget.
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Leaf className="w-8 h-8 text-[#588157]" />
-              </div>
-              <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Competent & organised
-                </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  40+ years combined experience in renewable energy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* R-ECO Values Section */}
       <section className="py-20">
