@@ -132,6 +132,7 @@ export default function Index() {
                 loop
                 muted
                 playsInline
+                preload="none"
               />
             </div>
           </div>
