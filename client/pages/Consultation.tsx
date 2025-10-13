@@ -10,8 +10,8 @@ export default function Consultation() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#588157]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-20 bg-[#135872]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
               Free Consultation
@@ -26,7 +26,7 @@ export default function Consultation() {
 
       {/* Consultation Process */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-normal text-tryba-cyprus mb-4">
               Our Consultation Process
@@ -139,7 +139,7 @@ export default function Consultation() {
 
       {/* Contact Form */}
       <section className="py-20 bg-tryba-cyan-light">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl lg:text-4xl font-normal text-tryba-cyprus mb-6">
@@ -163,7 +163,7 @@ export default function Consultation() {
                   <Mail className="w-6 h-6 text-tryba-aqua-deep" />
                   <div>
                     <div className="font-medium text-tryba-aqua-deep">Email</div>
-                    <div className="text-tryba-dove-gray">hello@r-eco.co.uk</div>
+                    <div className="text-tryba-dove-gray">hello@cozyhomesolutions.co.uk</div>
                   </div>
                 </div>
                 
@@ -247,7 +247,7 @@ export default function Consultation() {
                   />
                 </div>
                 
-                <Button className="w-full bg-[#588157] text-white py-6 rounded-full text-lg">
+                <Button className="w-full bg-[#135872] text-white py-6 rounded-full text-lg">
                   Book Free Consultation
                 </Button>
                 
@@ -262,15 +262,15 @@ export default function Consultation() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#588157]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="py-20 bg-[#135872]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Start Your Renewable Energy Journey?
           </h2>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
             Book your free consultation today and let our experts guide you to the perfect renewable energy solution.
           </p>
-          <Button className="bg-white text-[#588157] px-10 py-6 rounded-full text-lg font-medium">
+          <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium">
             Book Your Free Consultation
           </Button>
         </div>
@@ -278,10 +278,10 @@ export default function Consultation() {
 
       {/* Footer */}
       <footer className="border-t border-tryba-alto">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">R-ECO</h4>
+              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>

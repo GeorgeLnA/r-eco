@@ -7,8 +7,8 @@ export default function Projects() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#588157]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-20 bg-[#135872]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
               Our Projects
@@ -23,7 +23,7 @@ export default function Projects() {
 
       {/* Featured Projects */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div className="group">
               <div className="relative overflow-hidden rounded-xl mb-6">
@@ -52,7 +52,7 @@ export default function Projects() {
               </div>
               <blockquote className="italic text-tryba-dove-gray border-l-4 border-tryba-yellow pl-4">
                 "We gave Stuart and his team a tricky brief- to install solar panels on a steep hillside behind 
-                our thatched cottage. R-ECO came up with an ingenious solution and we are very pleased with the results."
+                our thatched cottage. Cozy Home Solutions came up with an ingenious solution and we are very pleased with the results."
                 <cite className="block mt-2 font-medium">- Nick & Mary Harrison</cite>
               </blockquote>
             </div>
@@ -129,14 +129,14 @@ export default function Projects() {
           </div>
 
                       {/* CTA Section */}
-            <div className="text-center bg-[#588157] py-20 px-6 rounded-xl">
+            <div className="text-center bg-[#135872] py-20 px-6 rounded-xl">
               <h2 className="text-3xl font-normal text-white mb-4">
                 Ready to Start Your Project?
               </h2>
               <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
                 Let's discuss how we can create a bespoke renewable energy solution for your home or business.
               </p>
-              <Button className="bg-white text-[#588157] px-10 py-6 rounded-full text-lg">
+              <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg">
                 Get Your Free Consultation
               </Button>
             </div>
@@ -145,10 +145,10 @@ export default function Projects() {
 
       {/* Footer */}
       <footer className="border-t border-tryba-alto">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">R-ECO</h4>
+              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>

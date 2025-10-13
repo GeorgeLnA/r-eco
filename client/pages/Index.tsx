@@ -1,8 +1,6 @@
-import { Check, ChevronDown, MapPin, Car, Home, Leaf, ShieldCheck, Umbrella, Sun, Play } from "lucide-react";
+import { Check, ChevronDown, Home, ShieldCheck, Sun } from "lucide-react";
 import { useState } from "react";
-import SplineAnimation from "../components/SplineAnimation";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import {
   Dialog,
@@ -27,26 +25,26 @@ export default function Index() {
   const processSteps = [
     {
       id: 1,
-      title: "Design & Consultation",
-      description: "Our consultation process is purposefully designed to determine whether an investment in renewable technologies is right for you. If not, we'll be honest, and advise appropriate actions for your situation.",
+      title: "Free Survey & Consultation",
+      description: "We start with a comprehensive free survey to assess your home's insulation needs. Our experts will evaluate your property and recommend the best solutions tailored to your requirements and budget.",
       image: "/1-small.jpg"
     },
     {
       id: 2,
-      title: "System Installation: 40+ years combined experience",
-      description: "Our team has over 40 years of combined practical experience within the energy industry and is skilled across multiple technical disciplines.",
+      title: "Professional Installation: 20+ years experience",
+      description: "Our experienced team has over 20 years of expertise in insulation installation. We use premium materials like SupaBead, HYBRIS, and SuperFOIL to ensure the highest quality results.",
       image: "/2-small.jpg"
     },
     {
       id: 3,
-      title: "Maintenance & Repair: Complex technologies support",
-      description: "As with everything in life - complex technologies require ongoing support. We'll be here to provide assistance when you need it.",
+      title: "Quality Assurance & Certification",
+      description: "All our work is MCS and HIES certified, ensuring you receive quality installations that meet the highest industry standards. Your investment is fully protected.",
       image: "/4-small.jpg"
     },
     {
       id: 4,
-      title: "Cooperative values: We're in this together",
-      description: "As a workers' cooperative, every member of our team has a stake in the business and is committed to delivering exceptional service.",
+      title: "Ongoing Support & Warranties",
+      description: "We stand behind our work with comprehensive warranties - 30 years on solar panels, 10 years on batteries and inverters. Our team is here to provide ongoing support whenever you need it.",
       image: "/9-small.jpg"
     }
   ];
@@ -55,73 +53,76 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       <Header />
       {/* Hero Section */}
-      <section className="relative h-[770px] flex items-start pt-20">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/person-near-alternative-energy-plant.jpg')"
-          }}
+      <section className="relative h-[550px] flex items-center">
+        <video 
+          src="/cc.mp4"
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30" />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-white text-base mb-6">
-              Renewable energy solutions for a sustainable future
-            </p>
-            <h1 className="text-white text-5xl lg:text-6xl xl:text-7xl font-normal leading-tight mb-6 uppercase">
-              Embrace the power<br />
-              of nature
+            <h1 className="text-white text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight mb-5 uppercase">
+              Welcome to<br />
+              Cozy Home Solutions
             </h1>
-            <Button className="bg-[#588157] text-white px-10 py-6 rounded-full text-base font-medium hover:opacity-90 transition-opacity">
-              Free Consultation
+            <p className="text-white/95 text-base lg:text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
+              One of the UK's most trusted home insulation companies. Improve comfort, lower energy bills, and future proof your property.
+            </p>
+            <Button className="bg-white text-[#135872] hover:bg-white/95 px-8 py-4 rounded-full text-base font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+              Get Free Quote
             </Button>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="border-b border-tryba-alto py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Car className="w-8 h-8 text-[#588157]" />
+      <section className="border-b border-tryba-alto py-12">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 flex items-center justify-center mb-4">
+                <ShieldCheck className="w-10 h-10 text-[#135872]" />
               </div>
               <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Responsible solutions
+                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                  20+ Years Experience
                 </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  Net-positive impact on humanity and the Earth.
+                <p className="text-tryba-dove-gray text-base">
+                  One of the UK's most trusted home insulation companies.
                 </p>
               </div>
             </div>
             
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Home className="w-8 h-8 text-[#588157]" />
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 flex items-center justify-center mb-4">
+                <Home className="w-10 h-10 text-[#135872]" />
               </div>
               <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Effective energy systems
+                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                  Lower Energy Bills
                 </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  Practical solutions to fit your requirements and budget.
+                <p className="text-tryba-dove-gray text-base">
+                  Improve comfort and reduce heating costs year-round.
                 </p>
               </div>
             </div>
             
-            <div className="flex items-center gap-6">
-              <div className="w-8 h-8 flex-shrink-0">
-                <Leaf className="w-8 h-8 text-[#588157]" />
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 flex items-center justify-center mb-4">
+                <Sun className="w-10 h-10 text-[#135872]" />
               </div>
               <div>
-                <h3 className="text-[#588157] text-xl font-medium mb-1">
-                  Competent & organised
+                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                  Solar & Insulation
                 </h3>
-                <p className="text-tryba-dove-gray text-sm">
-                  40+ years combined experience in renewable energy.
+                <p className="text-tryba-dove-gray text-base">
+                  Complete solutions from insulation to solar panels.
                 </p>
               </div>
             </div>
@@ -129,69 +130,68 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Services Section */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="mb-6">
-            <span className="block text-xs tracking-widest text-tryba-dove-gray uppercase mb-2">Technology</span>
-            <h2 className="text-[#588157] text-4xl lg:text-5xl font-normal leading-tight">
-              To harness the elements
+            <span className="block text-xs tracking-widest text-tryba-dove-gray uppercase mb-2">Our Services</span>
+            <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+              High-Performance Insulation Solutions
             </h2>
             <p className="text-tryba-dove-gray text-lg mt-4 max-w-3xl">
-              Renewable resources provide a reliable and sustainable supply of energy — and there are many
-              technologies that can work beautifully together in your home.
+              From loft insulation and cavity wall insulation to solar panel systems and loft boarding, we specialise in helping you improve comfort, lower energy bills, and future-proof your property.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                key: "ashp",
-                title: "Air Source Heat Pumps",
-                image: ashpImage,
+                key: "spray-foam",
+                title: "Spray Foam Insulation",
+                image: "/shutterstock_1505440952-2048x1365.jpg",
                 blurb:
-                  "A full central heating solution that provides heating and hot water by transferring heat between outdoor air and your home.",
-                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+                  "Over 20 years experience in residential and commercial spray foam. Solves heat loss and condensation issues on brick, stone, plasterboard, and more.",
+                tags: ["20+ Years Experience", "Residential & Commercial"],
               },
               {
-                key: "battery",
-                title: "Battery Storage",
-                image: powerwallImage,
+                key: "cavity-wall",
+                title: "Cavity Wall Insulation",
+                image: "/image0-21-pic.jpeg",
                 blurb:
-                  "Store solar electricity to power your home at night or during outages and make the most of smart tariffs.",
-                tags: ["Certified Tesla Powerwall Installer"],
+                  "SupaBead is next-generation graphite-based EPS insulation. Cost-effective full-fill solution that speeds up construction.",
+                tags: ["SupaBead System", "High Performance"],
               },
               {
-                key: "biomass",
-                title: "Biomass Boilers",
-                image: biomassBoilerImage,
+                key: "hybris",
+                title: "HYBRIS Insulation",
+                image: "/shutterstock_1505440952-2048x1365.jpg",
                 blurb:
-                  "A carbon-neutral heating and hot water solution using wood pellets, chips or logs.",
-                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+                  "Market leader in modern insulation with unique honeycomb structure. Significantly reduces energy consumption while providing maximum comfort.",
+                tags: ["Actis HYBRIS", "Energy Efficient"],
               },
               {
-                key: "ev",
-                title: "EV Charging",
-                image: homeChargerImage,
+                key: "superfoil",
+                title: "SuperFOIL Insulation",
+                image: "/cropped-2019-03-11-2-768x668.webp",
                 blurb:
-                  "Charge at home conveniently and take advantage of smart or off‑peak tariffs for the lowest running costs.",
-                tags: ["Smart Meter Ready"],
+                  "Perfect for pitched roof construction. Easy installation with no excessive measuring or cutting required. Reduces thermal bridging issues.",
+                tags: ["Quick Installation", "Retrofit & New Build"],
               },
               {
-                key: "pv",
-                title: "Solar PV",
+                key: "solar",
+                title: "Solar Panels",
                 image: solarPanelImage,
                 blurb:
-                  "Generate clean electricity for your home and sell surplus back to the grid through the Smart Export Guarantee.",
-                tags: ["Smart Export Guarantee"],
+                  "Fox Elite Installer. From small residential setups to commercial solar power plants. Lower bills, energy independence, reduced carbon footprint.",
+                tags: ["Fox Elite Installer", "MCS Certified"],
               },
               {
-                key: "thermal",
-                title: "Solar Thermal",
-                image: solarThermalImage,
+                key: "loft-boarding",
+                title: "Loft Boarding",
+                image: "/shutterstock_237359374-2048x1365.jpg",
                 blurb:
-                  "Collect sunlight to heat water for your home, reduce boiler runtime and cut gas usage.",
-                tags: ["Green Homes Grant", "Renewable Heat Incentive"],
+                  "Durable and cost-effective loft flooring systems. Create safe, usable storage areas while maintaining proper insulation protection.",
+                tags: ["Safe Storage", "Meets Regulations"],
               },
             ].map((product) => (
               <Dialog key={product.key}>
@@ -234,12 +234,12 @@ export default function Index() {
                     />
                     <div className="space-y-3">
                       {[
-                        "Professional design & installation",
-                        "MCS certified quality",
-                        "Ongoing maintenance & support",
+                        "Professional installation",
+                        "20+ years experience",
+                        "Free quote & survey",
                       ].map((item) => (
                         <div key={item} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-[#588157] mt-1" />
+                          <Check className="w-5 h-5 text-[#135872] mt-1" />
                           <span className="text-tryba-dove-gray">{item}</span>
                         </div>
                       ))}
@@ -254,76 +254,126 @@ export default function Index() {
 
 
 
-      {/* R-ECO Values Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-[#588157] text-4xl lg:text-5xl font-normal leading-tight text-center mb-16">
-            R-ECO is at the heart of the renewable energy transition
-          </h2>
-          
-          {/* Video Section */}
-          <div className="max-w-7xl mx-auto mb-16">
-            <div className="relative rounded-xl overflow-hidden">
-              <video 
-                src="/cc.mp4"
-                className="w-full h-96 object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="none"
+      {/* Solar Panel Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-6">
+                The Solar Solution
+              </h2>
+              <p className="text-tryba-dove-gray text-lg leading-relaxed mb-6">
+                From a small solar set-up on your residential property to a full-scale solar power plant atop your commercial premises. We're Fox Elite Installers here to guide you in your solar journey.
+              </p>
+              <p className="text-tryba-dove-gray text-lg leading-relaxed mb-6">
+                The advantages of solar panels include lower electricity bills, energy independence and reduced carbon footprint. MCS certified installations with HIES protection.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">450kW Bi-Facial Black on Black Panels</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Modula Lithium-Ion Battery System</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">30 Year Panel Warranty / 10 Year Battery Warranty</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Flexible Monthly Payments from £75/month</span>
+                </div>
+              </div>
+              <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+                Get Instant Solar Quote
+              </Button>
+            </div>
+            <div className="relative">
+              <img 
+                src="/Panel-bat6.webp"
+                alt="Solar panels and battery system installation"
+                className="w-full h-[500px] object-cover rounded-xl shadow-lg"
               />
-            </div>
-          </div>
-          
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-16">
-              <div className="flex items-center gap-3">
-                <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6 text-[#588157] flex-shrink-0" />
-                <span className="text-[#588157] text-lg sm:text-2xl font-medium text-center">
-                  MCS Certified installations
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Umbrella className="w-5 h-5 sm:w-6 sm:h-6 text-[#588157] flex-shrink-0" />
-                <span className="text-[#588157] text-lg sm:text-2xl font-medium text-center">
-                  Worker's cooperative values
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Sun className="w-5 h-5 sm:w-6 sm:h-6 text-[#588157] flex-shrink-0" />
-                <span className="text-[#588157] text-lg sm:text-2xl font-medium text-center">
-                  15+ years experience
-                </span>
+              <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-6 max-w-sm">
+                <h3 className="text-xl font-medium text-[#135872] mb-2">Easy, Affordable Solar</h3>
+                <p className="text-2xl font-bold text-[#135872] mb-1">£0 UPFRONT</p>
+                <p className="text-lg text-tryba-dove-gray mb-3">From £75 A Month</p>
+                <p className="text-xs text-tryba-dove-gray">12 Panels • 3.6kW Inverter • 5kW Battery • MCS Certified</p>
               </div>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <Button className="bg-[#588157] text-white px-10 py-6 rounded-full">
-              About R-ECO
-            </Button>
           </div>
         </div>
       </section>
 
 
 
-      {/* Main Solutions Section */}
-      <section className="py-8">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-end">
-            <div className="text-center lg:text-left">
-              <h2 className="text-tryba-cyprus text-4xl lg:text-5xl font-normal leading-tight mb-4">
-                Making our planet more sustainable with R-ECO renewable energy solutions!
+      {/* Loft Boarding Section */}
+      <section className="py-20">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-6">
+                Boarding Lofts The Easy Way
               </h2>
+              <p className="text-tryba-dove-gray text-xl leading-relaxed mb-6">
+                Looking to upgrade your storage space? Our loft boarding systems offer a durable and cost-effective way to create safe, usable storage areas without the expense of a full renovation.
+              </p>
+              <p className="text-tryba-dove-gray text-xl leading-relaxed mb-6">
+                We follow all loft boarding regulations, ensuring proper insulation protection and structural safety. Get more from your home - maximize storage and improve functionality with tailored solutions.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Meets All Loft Boarding Regulations</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Proper Insulation Protection</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Structural Safety Guaranteed</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <span className="text-tryba-dove-gray">Cost-Effective Storage Solution</span>
+                </div>
+              </div>
+              <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+                Learn More
+              </Button>
+            </div>
+            <div className="relative">
+              <img 
+                src="/shutterstock_237359374-2048x1365.jpg"
+                alt="Loft boarding installation"
+                className="w-full h-96 object-cover rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-4">
+                With Over 20 Years Experience Specialising in Insulation
+              </h2>
+              <p className="text-tryba-dove-gray text-xl leading-relaxed">
+                You can trust Cozy Home Solutions to aid your home improvement journey
+              </p>
             </div>
             <div className="lg:pl-20 text-center lg:text-left">
-              <p className="text-tryba-dove-gray text-xl leading-relaxed mb-2">
-                Over 15 years we've completed hundreds of installations and delivered bespoke energy systems of the highest standard.
+              <p className="text-tryba-dove-gray text-lg leading-relaxed mb-4">
+                We are proud to be one of the UK's leading insulation companies. We specialise in both traditional and spray foam insulation, cavity wall insulation, conservatory roof insulation, and Solar Energy.
               </p>
-              <p className="text-tryba-dove-gray text-xl leading-relaxed">
-                As a <strong>worker's cooperative</strong>, every member of our team has a stake in the business and we're committed to cooperative values.
+              <p className="text-tryba-dove-gray text-lg leading-relaxed">
+                We offer a wide range of solutions to help you on your home improvement journey, so you can trust us to provide high-quality insulation services that will keep your home warm and efficient for years to come!
               </p>
             </div>
           </div>
@@ -332,8 +382,8 @@ export default function Index() {
 
       {/* Consultation Section */}
       <section className="py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="bg-[#588157] rounded-xl p-6 lg:p-20">
+        <div className="max-w-[98vw] mx-auto px-4 lg:px-8">
+          <div className="bg-[#135872] rounded-xl p-6 lg:p-20">
             <div className="grid lg:grid-cols-2 gap-4 lg:gap-8 mb-8 lg:mb-16">
               <img 
                 src="/1-small.jpg"
@@ -349,28 +399,20 @@ export default function Index() {
             
             <div className="border-t border-white/20 pt-8 lg:pt-16">
               <h2 className="text-white text-2xl lg:text-4xl xl:text-5xl font-normal leading-tight mb-6 lg:mb-12 text-center">
-                Renewable energy could be the next step on your path to a sustainable future
+                Get a Free Quote Today
               </h2>
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-white text-base lg:text-xl leading-relaxed mb-6 lg:mb-8 text-center">
-                  We know upgrading to a renewable energy system is a big decision, and that's why we offer a free, no-strings-attached consultation
+                  Whether you're exploring wall insulation, thermal insulation, solar panels for your home, or a complete energy upgrade, we're here to help. We guarantee to beat any like-for-like quote – that's our Cozy Promise.
                 </p>
-                <div className="space-y-4">
-                  <div className="flex flex-col sm:flex-row gap-3 bg-white rounded-full p-1">
-                    <div className="hidden sm:flex items-center gap-3 flex-1 px-4 py-3">
-                      <MapPin className="w-5 h-5 text-gray-600 flex-shrink-0" />
-                      <Input
-                        placeholder="Start your consultation journey"
-                        className="border-0 text-base bg-transparent focus:ring-0 px-0 placeholder:text-gray-500"
-                      />
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <Button className="bg-white text-[#588157] px-10 py-4 rounded-full text-lg font-medium">
-                      Free Consultation
-                    </Button>
-                  </div>
+                <div className="text-center space-y-4">
+                  <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium hover:bg-gray-100">
+                    Get Free Quote & Survey
+                  </Button>
+                  <p className="text-white text-sm">
+                    Finance available from 10.9% APR Representative
+                  </p>
                 </div>
               </div>
             </div>
@@ -382,7 +424,7 @@ export default function Index() {
 
       {/* Process Section */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex flex-col items-start justify-center">
               <h2 className="text-tryba-cyprus text-4xl lg:text-5xl font-normal leading-tight mb-6">
@@ -406,13 +448,13 @@ export default function Index() {
                   onClick={() => setSelectedStep(step.id)}
                 >
                   <span className={`text-base pt-2 font-medium ${
-                    selectedStep === step.id ? 'text-[#588157]' : 'text-tryba-dove-gray'
+                    selectedStep === step.id ? 'text-[#135872]' : 'text-tryba-dove-gray'
                   }`}>
                     {String(step.id).padStart(2, '0')}
                   </span>
                   <div className="flex-1">
                     <h3 className={`text-3xl font-normal mb-4 ${
-                      selectedStep === step.id ? 'text-[#588157]' : 'text-tryba-dove-gray'
+                      selectedStep === step.id ? 'text-[#135872]' : 'text-tryba-dove-gray'
                     }`}>
                       {step.title}
                     </h3>
@@ -429,124 +471,62 @@ export default function Index() {
         </div>
       </section>
 
-      {/* SOLAR PV Card Section */}
-      <section className="py-20 hidden md:block">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="w-full">
-            {/* SOLAR PV Card */}
-            <div className="relative h-[900px] rounded-xl overflow-hidden group cursor-pointer">
-              <div className="absolute inset-0 bg-[#588157] rounded-xl">
-                <div className="p-8 h-full flex flex-col">
-                  <div className="flex-1 relative flex flex-col items-center justify-center">
-                    <div className="w-full h-[700px] rounded-xl overflow-hidden flex items-center justify-center">
-                      <div className="w-full h-full flex items-center justify-center mx-auto">
-                        <SplineAnimation 
-                          className="w-full h-full"
-                        />
-                      </div>
-                    </div>
 
-                    <div className="absolute bottom-6 right-6">
-                      <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                        <svg className="w-6 h-6 text-[#588157]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-6">
-                                <h3 className="text-white text-3xl font-normal mb-4">
-              Solar PV Domestic Installation
-            </h3>
-                    <p className="text-white text-xl leading-relaxed mb-6">
-                      Generate solar energy to power your home, store electricity in a battery for later use, or sell back to the grid with the Smart Export Guarantee scheme.
-                    </p>
-                    
-                    <div className="grid grid-cols-2 gap-x-6 gap-y-4 text-sm">
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">Design & Consultation</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">Technical Survey</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">System Installation</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">MCS Certified</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">Maintenance & Repair</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Check className="w-5 h-5 text-white" />
-                        <span className="text-white font-medium">Smart Export Guarantee</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </section>
-
-
-
-      {/* Guide Section */}
+      {/* SuperFOIL Section */}
       <section className="border-b border-tryba-alto py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-[#588157] text-4xl lg:text-5xl font-normal leading-tight">
-              To harness the elements - renewable technologies
+            <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+              What is our SuperFOIL Solution?
             </h2>
+            <p className="text-tryba-dove-gray text-xl mt-6 max-w-4xl">
+              SuperFOIL is the perfect insulation choice for your pitched roof construction, from retrofit applications to new builds. SuperFOIL manufactures a wide range of products suitable for under rafter and over rafter installation.
+            </p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-6 mb-16">
-                          <div className="group cursor-pointer">
-                <img 
-                  src="/9-small.jpg"
-                  alt="Solar panels on roof"
-                  className="w-full h-96 object-cover rounded-xl mb-4"
-                />
+            <div className="group cursor-pointer">
+              <img 
+                src="/9-small.jpg"
+                alt="SuperFOIL insulation installation"
+                className="w-full h-96 object-cover rounded-xl mb-4"
+              />
               <div className="flex gap-2 mb-4">
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Solar PV</span>
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Battery Storage</span>
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Smart Export</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Quick Installation</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Retrofit</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">New Build</span>
               </div>
               <h3 className="text-black text-2xl font-normal leading-tight">
-                Solar PV installation for your home
+                Easy and Quick Fitting Methods
               </h3>
+              <p className="text-tryba-dove-gray mt-2">
+                No excessive measuring or cutting required like standard loft insulation. Our innovative continuous layer installation reduces time while avoiding thermal bridging.
+              </p>
             </div>
             
-                          <div className="group cursor-pointer">
-                <img 
-                  src="/13-small.jpg"
-                  alt="Solar panels on roof"
-                  className="w-full h-96 object-cover rounded-xl mb-4"
-                />
+            <div className="group cursor-pointer">
+              <img 
+                src="/13-small.jpg"
+                alt="Professional insulation service"
+                className="w-full h-96 object-cover rounded-xl mb-4"
+              />
               <div className="flex gap-2 mb-4">
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Heat Pumps</span>
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">EV Charging</span>
-                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Biomass</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">20+ Years</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Expert Team</span>
+                <span className="bg-black/5 text-black px-2 py-1 rounded text-sm">Premium Quality</span>
               </div>
               <h3 className="text-black text-2xl font-normal leading-tight">
-                Renewable energy technologies guide
+                Years of experience mean highest quality
               </h3>
+              <p className="text-tryba-dove-gray mt-2">
+                We constantly adapt our processes to ensure we always provide the highest quality installations using the best materials available.
+              </p>
             </div>
           </div>
           
           <div className="text-center">
-            <Button className="bg-[#588157] text-white px-10 py-6 rounded-full">
-              View all technologies
+            <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+              Learn More About SuperFOIL
             </Button>
           </div>
         </div>
@@ -554,16 +534,16 @@ export default function Index() {
 
       {/* FAQ Section */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 mb-16">
             <div>
-                          <h2 className="text-[#588157] text-4xl lg:text-5xl font-normal leading-tight">
-              R-ECO answers all your questions about renewable energy
-            </h2>
+              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+                Frequently Asked Questions
+              </h2>
             </div>
             <div className="lg:pl-28">
               <p className="text-tryba-dove-gray text-xl leading-relaxed">
-                Heat pumps, solar PV, battery storage, EV charging, biomass, solar thermal. Find all the answers to your questions thanks to our renewable energy expertise.
+                Spray foam insulation, cavity wall, HYBRIS, SuperFOIL, solar panels, and loft boarding. Find all the answers to your questions about home insulation and energy solutions.
               </p>
             </div>
           </div>
@@ -572,32 +552,32 @@ export default function Index() {
             <div className="border border-tryba-alto rounded-xl p-4 mb-8">
               {[
                 {
-                  question: "What renewable energy system is right for my home?",
-                  answer: "The best renewable energy system depends on your home's location, roof orientation, energy consumption, and budget. Solar PV is excellent for most homes, while heat pumps work well for heating and cooling. Our consultation process evaluates your specific needs to recommend the optimal solution."
+                  question: "What type of insulation is best for my home?",
+                  answer: "The best insulation depends on your property type and needs. Spray foam is excellent for hard-to-reach areas and complex surfaces. Cavity wall insulation with SupaBead is perfect for standard cavity walls. HYBRIS and SuperFOIL work brilliantly for loft and roof insulation. We offer free surveys to recommend the optimal solution for your home."
                 },
                 {
-                  question: "What are the benefits of air source heat pumps?",
-                  answer: "Air source heat pumps provide efficient heating and cooling, reduce carbon emissions by up to 70%, lower energy bills, require minimal maintenance, and can work in temperatures as low as -15°C. They're also eligible for government grants and can increase your property value."
+                  question: "How much can I save with proper insulation?",
+                  answer: "Proper insulation can reduce your energy bills by 25-40% annually. Loft insulation alone can save up to £355 per year, while cavity wall insulation can save around £395 per year. Combined with our solar panel systems, you could see even greater savings and faster return on investment."
                 },
                 {
-                  question: "How does battery storage work with solar PV?",
-                  answer: "Battery storage captures excess solar energy during the day for use at night or during power outages. This maximizes your solar investment, reduces grid dependency, and can provide backup power. Smart systems automatically manage charging and discharging for optimal efficiency."
+                  question: "What is spray foam insulation and where can it be used?",
+                  answer: "Spray foam insulation is a versatile solution that expands to fill gaps and create an airtight seal. With 20+ years experience, we can apply it to brick, stone, plasterboard, corrugated sheets, concrete, and metal. It solves heat loss and condensation issues while providing superior thermal performance for both residential and commercial properties."
                 },
                 {
-                  question: "What government incentives are available?",
-                  answer: "Current incentives include the Smart Export Guarantee (SEG) for selling excess energy, 0% VAT on energy-saving materials, and potential grants through local authorities. We stay updated on all available schemes to maximize your savings and return on investment."
+                  question: "How long does insulation installation take?",
+                  answer: "Most insulation projects are completed quickly. Loft insulation typically takes 1-2 days, cavity wall insulation can be done in a single day, and spray foam installations usually take 1-3 days depending on the area. We work efficiently to minimize disruption to your home."
                 },
                 {
-                  question: "How long does a renewable energy installation take?",
-                  answer: "Typical installations take 1-3 days for solar PV, 2-5 days for heat pumps, and 1-2 days for battery storage. The entire process from consultation to completion usually takes 4-8 weeks, including design, permits, and grid connection approval."
+                  question: "Do you offer solar panel financing?",
+                  answer: "Yes! We offer flexible financing from £75 per month with £0 upfront cost. Finance is available from 10.9% APR Representative. Our solar packages include 450kW Bi-Facial Black on Black Panels, Modula Lithium-Ion Battery, Fox Hybrid Inverter, with 30-year panel warranty and 10-year battery warranty."
                 },
                 {
-                  question: "What maintenance is required for my system?",
-                  answer: "Solar PV systems require minimal maintenance - just annual inspections and occasional cleaning. Heat pumps need annual servicing, while batteries require periodic health checks. We offer comprehensive maintenance packages to ensure optimal performance and longevity."
+                  question: "What warranties do you provide?",
+                  answer: "Our solar panels come with a 30-year warranty, while batteries and inverters have 10-year warranties. All installations are MCS and HIES certified. We also offer ongoing maintenance and support packages to ensure your system performs optimally for years to come."
                 },
                 {
-                  question: "How do I become energy independent?",
-                  answer: "Energy independence comes from combining multiple renewable technologies: solar PV for generation, battery storage for energy management, heat pumps for efficient heating, and smart controls for optimization. Our systems can reduce grid dependency by up to 80-90%."
+                  question: "Why choose Cozy Home Solutions?",
+                  answer: "With 20+ years experience, we're one of the UK's most trusted insulation companies. We're Fox Elite Installers, offer a price-match guarantee (the Cozy Promise), use only premium materials like SupaBead, HYBRIS, and SuperFOIL, and provide comprehensive service from free surveys to ongoing maintenance and support."
                 }
               ].map((item, index) => (
                 <div key={index} className="border-b border-tryba-alto last:border-b-0">
@@ -624,7 +604,7 @@ export default function Index() {
             </div>
             
             <div className="text-center">
-                                                     <Button className="bg-[#588157] text-white px-10 py-6 rounded-full">
+                                                     <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
               View FAQ
             </Button>
             </div>
@@ -632,68 +612,90 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Expandable Info Section */}
-      <section className="bg-[#588157] py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl">
-            <h3 className="text-white text-xl font-medium mb-4">
-              Founded in 2006, The Renewable Energy Co-operative
-            </h3>
-            <p className="text-tryba-alto text-base leading-relaxed mb-6">
-              Has 15 years experience blending enthusiasm for technological innovation and practicality with cooperative values and a long-term, purpose-driven perspective towards effective energy solutions.
-            </p>
-            <p className="text-tryba-alto text-base font-bold mb-6">
-              At R-ECO, we're in this together
-            </p>
-            <p className="text-tryba-alto text-base leading-relaxed">
-              By embracing the elements today, we're contributing towards a thriving world where energy sovereignty is ubiquitous.
+      {/* Accreditations Section */}
+      <section className="bg-[#135872] py-20">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-white text-3xl lg:text-4xl font-normal mb-4">
+              Accreditations & Certifications
+            </h2>
+            <p className="text-white text-lg max-w-3xl mx-auto">
+              Cozy Home Solutions is proud to be MCS certified, HIES protected, and a Fox Elite Installer. We're fully accredited and regulated by the Financial Conduct Authority.
             </p>
           </div>
-          
-
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white/10 rounded-xl p-6">
+              <h3 className="text-white text-xl font-medium mb-2">MCS Certified</h3>
+              <p className="text-white/80 text-sm">Quality installations to the highest standards</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6">
+              <h3 className="text-white text-xl font-medium mb-2">Fox Elite Installer</h3>
+              <p className="text-white/80 text-sm">Premium solar panel systems expert</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-6">
+              <h3 className="text-white text-xl font-medium mb-2">HIES Protected</h3>
+              <p className="text-white/80 text-sm">Your investment is fully protected</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-tryba-alto">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+      <footer className="bg-[#135872] border-t border-[#0d4557]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">R-ECO</h4>
+              <h4 className="text-white text-lg font-semibold mb-6">Cozy Home Solutions</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Consultation</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Technology</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Partners</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Associations</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Home</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Insulation</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Solar Panels</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Loft Boarding</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Blog</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Commercial</a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Services</h4>
+              <h4 className="text-white text-lg font-semibold mb-6">Our Services</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Solar PV</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Heat Pumps</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Battery Storage</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">EV Charging</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Biomass Boilers</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Solar Thermal</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Spray Foam Insulation</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Cavity Wall Insulation</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">HYBRIS Insulation</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">SuperFOIL Insulation</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Solar Panels</a>
+                <a href="#" className="block text-white/80 text-xl hover:text-white">Loft Boarding</a>
               </div>
             </div>
             
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
+              <h4 className="text-white text-lg font-semibold mb-6">Contact Us</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
+                <a href="tel:08006889666" className="block text-white/80 text-xl hover:text-white">0800 688 9666</a>
+                <a href="mailto:hello@cozyhomesolutions.co.uk" className="block text-white/80 text-xl hover:text-white">hello@cozyhomesolutions.co.uk</a>
+                <p className="text-white/80 text-base">Unit 2, Old Station Yard</p>
+                <p className="text-white/80 text-base">Watlington Road, Cowley</p>
+                <p className="text-white/80 text-base">Oxford, OX4 6FE</p>
+                <p className="text-white/80 text-sm mt-4">MON - FRI: 09:00 - 17:00</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-white/20 mt-12 pt-8">
+            <div className="text-center space-y-4">
+              <p className="text-white/70 text-sm">
+                Cozy Home Solutions Ltd is an appointed representative of HTG Finance Limited which is authorised and regulated by the Financial Conduct Authority.
+              </p>
+              <p className="text-white/70 text-sm">
+                Registered in England No: 12245890 | VAT Registration No: 339543185
+              </p>
+              <div className="flex justify-center gap-6 text-sm">
+                <a href="#" className="text-white/70 hover:text-white">Privacy Policy</a>
+                <a href="#" className="text-white/70 hover:text-white">Cookie Policy</a>
               </div>
             </div>
           </div>
         </div>
-        
-
       </footer>
     </div>
   );

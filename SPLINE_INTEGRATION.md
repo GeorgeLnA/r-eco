@@ -1,4 +1,4 @@
-# Spline Animation Integration Guide for R-ECO
+# Spline Animation Integration Guide for Cozy Home Solutions
 
 ## 🚀 What is Spline?
 
@@ -83,7 +83,7 @@ With:
 ### Loading States
 Customize the loading spinner in `SplineAnimation.tsx`:
 ```tsx
-<div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#588157] mx-auto mb-4"></div>
+<div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#135872] mx-auto mb-4"></div>
 ```
 
 ### Styling
@@ -150,4 +150,4 @@ The component automatically adapts to different screen sizes using Tailwind CSS 
 
 **Happy animating! 🎉**
 
-Your R-ECO project now has the foundation for amazing 3D renewable energy experiences!
+Your Cozy Home Solutions project now has the foundation for amazing 3D renewable energy experiences!

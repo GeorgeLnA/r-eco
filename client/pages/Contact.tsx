@@ -10,14 +10,14 @@ export default function Contact() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#588157]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-20 bg-[#135872]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
               Contact Us
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Thank you for your interest in R-ECO. Feel free to reach out and open up a conversation 
+              Thank you for your interest in Cozy Home Solutions. Feel free to reach out and open up a conversation 
               using the phone number below, the contact form, or via our chatbot.
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function Contact() {
 
       {/* Contact Information */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Details */}
             <div>
@@ -59,7 +59,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-tryba-aqua-deep mb-2">Email</h3>
-                    <p className="text-tryba-dove-gray mb-2">hello@r-eco.co.uk</p>
+                    <p className="text-tryba-dove-gray mb-2">hello@cozyhomesolutions.co.uk</p>
                     <p className="text-sm text-tryba-boulder">
                       Send us detailed information about your project and we'll get back to you 
                       within 24 hours.
@@ -197,14 +197,14 @@ export default function Contact() {
                       required
                     />
                     <span className="text-sm text-tryba-dove-gray">
-                      I agree to R-ECO's privacy policy and consent to being contacted about my inquiry. 
+                      I agree to Cozy Home Solutions's privacy policy and consent to being contacted about my inquiry. 
                       I understand my information will only be used to respond to my request and will 
                       not be shared with third parties. *
                     </span>
                   </label>
                 </div>
                 
-                            <Button className="w-full bg-[#588157] text-white py-6 rounded-full text-lg font-medium">
+                            <Button className="w-full bg-[#135872] text-white py-6 rounded-full text-lg font-medium">
               Send Message
             </Button>
                 
@@ -219,7 +219,7 @@ export default function Contact() {
 
       {/* Service Areas */}
       <section className="py-20 bg-tryba-cyan-light">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-normal text-tryba-cyprus mb-4">
               Our Service Areas
@@ -280,7 +280,7 @@ export default function Contact() {
 
       {/* Business Information */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-normal text-tryba-cyprus mb-4">
               Company Information
@@ -328,8 +328,8 @@ export default function Contact() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#588157]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <section className="py-20 bg-[#135872]">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Start Your Renewable Energy Journey?
           </h2>
@@ -338,12 +338,12 @@ export default function Contact() {
             the best renewable energy solutions for your home or business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-[#588157] px-8 py-6 rounded-full text-lg font-medium">
+            <Button className="bg-white text-[#135872] px-8 py-6 rounded-full text-lg font-medium">
               Call: 01865 595 264
             </Button>
             <Button 
               variant="outline" 
-              className="bg-white text-[#588157] border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
+              className="bg-white text-[#135872] border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
             >
               Book Free Consultation
             </Button>
@@ -353,10 +353,10 @@ export default function Contact() {
 
       {/* Footer */}
       <footer className="border-t border-tryba-alto">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">R-ECO</h4>
+              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>

@@ -15,8 +15,8 @@ const SplineAnimation: React.FC<SplineAnimationProps> = ({
       <Suspense fallback={
         <div className="w-full h-full flex items-center justify-center bg-transparent">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#588157] mx-auto mb-4"></div>
-            <p className="text-[#588157]">Loading 3D Animation...</p>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#135872] mx-auto mb-4"></div>
+            <p className="text-[#135872]">Loading 3D Animation...</p>
           </div>
         </div>
       }>
