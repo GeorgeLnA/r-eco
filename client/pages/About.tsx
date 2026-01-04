@@ -52,14 +52,14 @@ export default function About() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
-              About Cozy Home Solutions
+              About HAPPY HOME
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Cozy Home Solutions is at the heart of the renewable energy transition. Founded in 2006, The Renewable Energy Co-operative 
+              HAPPY HOME is at the heart of the renewable energy transition. Founded in 2006, The Renewable Energy Co-operative 
               has 15 years experience blending enthusiasm for technological innovation with cooperative values.
             </p>
           </div>
@@ -121,10 +121,10 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-[#135872]">
+                <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4 text-black">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-medium text-[#135872] mb-3">
+                <h3 className="text-xl font-medium text-black mb-3">
                   {value.title}
                 </h3>
                 <p className="text-tryba-dove-gray">
@@ -155,7 +155,7 @@ export default function About() {
                 <p>
                   As a workers' cooperative, every member of our team has a stake in the business. Whether it's 
                   on call with one of our technicians, a collaborative effort towards a complex project design, 
-                  or seeing our directors climb a scaffold to mount your solar panels; with Cozy Home Solutions you know we're in this together.
+                  or seeing our directors climb a scaffold to mount your solar panels; with HAPPY HOME you know we're in this together.
                 </p>
                 <p>
                   This model ensures that every decision we make is guided by our collective values and long-term 
@@ -169,7 +169,7 @@ export default function About() {
               </div>
               <div className="mt-8">
                 <div className="bg-tryba-cyan-light rounded-xl p-6">
-                  <h3 className="text-lg font-medium text-[#135872] mb-3">
+                  <h3 className="text-lg font-medium text-black mb-3">
                     Co-operatives UK Member
                   </h3>
                   <p className="text-tryba-dove-gray text-sm">
@@ -203,7 +203,7 @@ export default function About() {
                   alt={member.name}
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="text-xl font-medium text-[#135872] mb-2">
+                <h3 className="text-xl font-medium text-black mb-2">
                   {member.name}
                 </h3>
                 <p className="text-tryba-boulder font-medium mb-3">
@@ -227,21 +227,21 @@ export default function About() {
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-tryba-dove-gray mb-8">
-                At Cozy Home Solutions, we're in this together. By embracing the elements today, we're contributing towards 
+                At HAPPY HOME, we're in this together. By embracing the elements today, we're contributing towards 
                 a thriving world where energy sovereignty is ubiquitous; healthy, natural environments are abundant; 
                 and meaningful opportunity is open to all individuals and communities for generations to come.
               </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-[#135872] mb-2">500+</div>
+                  <div className="text-4xl font-bold text-black mb-2">500+</div>
                   <div className="text-tryba-dove-gray">Renewable installations</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-[#135872] mb-2">15+</div>
+                  <div className="text-4xl font-bold text-black mb-2">15+</div>
                   <div className="text-tryba-dove-gray">Years of experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-[#135872] mb-2">2MW+</div>
+                  <div className="text-4xl font-bold text-black mb-2">2MW+</div>
                   <div className="text-tryba-dove-gray">Solar capacity installed</div>
                 </div>
               </div>
@@ -265,31 +265,31 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="text-2xl font-bold text-[#135872]">MCS</div>
+                <div className="text-2xl font-bold text-black">MCS</div>
               </div>
               <p className="text-sm text-tryba-dove-gray">MCS Certified</p>
             </div>
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="text-2xl font-bold text-[#135872]">COOP</div>
+                <div className="text-2xl font-bold text-black">COOP</div>
               </div>
               <p className="text-sm text-tryba-dove-gray">Co-operatives UK</p>
             </div>
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="text-2xl font-bold text-[#135872]">RECC</div>
+                <div className="text-2xl font-bold text-black">RECC</div>
               </div>
               <p className="text-sm text-tryba-dove-gray">Renewable Energy Consumer Code</p>
             </div>
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="text-2xl font-bold text-[#135872]">IWA</div>
+                <div className="text-2xl font-bold text-black">IWA</div>
               </div>
               <p className="text-sm text-tryba-dove-gray">Independent Warranty Association</p>
             </div>
             <div className="text-center">
               <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="text-2xl font-bold text-[#135872]">ELECSA</div>
+                <div className="text-2xl font-bold text-black">ELECSA</div>
               </div>
               <p className="text-sm text-tryba-dove-gray">Electrical Safety</p>
             </div>
@@ -298,7 +298,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Join Our Mission?
@@ -308,12 +308,12 @@ export default function About() {
             we'd love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-[#135872] px-8 py-6 rounded-full text-lg font-medium">
+            <Button className="bg-white text-black px-8 py-6 rounded-full text-lg font-medium">
               Get Your Free Consultation
             </Button>
             <Button 
               variant="outline" 
-              className="bg-white text-[#135872] border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
+              className="bg-white text-black border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
             >
               Learn About Careers
             </Button>
@@ -326,7 +326,7 @@ export default function About() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-black text-lg font-normal mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
@@ -352,7 +352,6 @@ export default function About() {
             <div>
               <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
               </div>

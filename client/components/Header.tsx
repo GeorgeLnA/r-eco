@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 import { useState } from "react";
 
 const navigation = [
@@ -17,19 +17,15 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-[#135872] via-[#1a6d8c] to-[#135872] shadow-lg backdrop-blur-sm border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-black via-black to-black shadow-lg backdrop-blur-sm border-b border-white/10">
       {/* Top bar with contact info */}
-      <div className="hidden lg:block bg-[#0d4557]/80 backdrop-blur-sm">
+      <div className="hidden lg:block bg-black/80 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex h-10 items-center justify-between text-sm">
             <div className="flex items-center space-x-6 text-white/80">
               <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+44 123 456 7890</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@cozyhomesolutions.co.uk</span>
+                <span>info@happyhome.co.uk</span>
               </div>
             </div>
             <div className="text-white/60">
@@ -46,11 +42,9 @@ export default function Header() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center group">
               <div className="relative">
-                <img
-                  src="/CozyHome-Solutions.webp"
-                  alt="Cozy Home Solutions Logo"
-                  className="h-12 w-auto transition-all duration-300 group-hover:scale-105"
-                />
+                <span className="text-white text-2xl font-bold transition-all duration-300 group-hover:scale-105">
+                  HAPPY HOME
+                </span>
                 <div className="absolute inset-0 bg-white/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
               </div>
             </Link>
@@ -81,7 +75,7 @@ export default function Header() {
             {/* CTA Button */}
             <Button 
               asChild
-              className="hidden lg:inline-flex bg-white text-[#135872] hover:bg-white/95 font-semibold rounded-full px-7 py-3 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] border border-transparent hover:border-white/50"
+              className="hidden lg:inline-flex bg-white text-black hover:bg-white/95 font-semibold rounded-full px-7 py-3 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] border border-transparent hover:border-white/50"
             >
               <Link to="/consultation">Free Consultation</Link>
             </Button>
@@ -117,7 +111,7 @@ export default function Header() {
         {/* Mobile navigation */}
         {mobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-3 pt-3 pb-6 space-y-2 bg-[#0d4557]/95 rounded-xl mt-3 backdrop-blur-sm border border-white/20 shadow-xl">
+            <div className="px-3 pt-3 pb-6 space-y-2 bg-black/95 rounded-xl mt-3 backdrop-blur-sm border border-white/20 shadow-xl">
               {navigation.map((item) => {
                 const isActive = location.pathname === item.href;
                 return (
@@ -141,22 +135,16 @@ export default function Header() {
                 <div className="px-5 py-3 space-y-3 text-sm text-white/80">
                   <div className="flex items-center space-x-3">
                     <div className="p-1.5 bg-white/15 rounded-full">
-                      <Phone className="h-3.5 w-3.5" />
-                    </div>
-                    <span>+44 123 456 7890</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="p-1.5 bg-white/15 rounded-full">
                       <Mail className="h-3.5 w-3.5" />
                     </div>
-                    <span>info@cozyhomesolutions.co.uk</span>
+                    <span>info@happyhome.co.uk</span>
                   </div>
                 </div>
                 
                 <div className="px-5 py-4">
                   <Button 
                     asChild
-                    className="w-full bg-white text-[#135872] hover:bg-white/95 font-semibold rounded-full py-3.5 shadow-md hover:shadow-lg transition-all duration-200 border border-transparent hover:border-white/50"
+                    className="w-full bg-white text-black hover:bg-white/95 font-semibold rounded-full py-3.5 shadow-md hover:shadow-lg transition-all duration-200 border border-transparent hover:border-white/50"
                   >
                     <Link to="/consultation" onClick={() => setMobileMenuOpen(false)}>
                       Get Free Consultation

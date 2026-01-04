@@ -31,7 +31,7 @@ const technologies = [
       "Year-round operation"
     ],
     incentives: ["Green Homes Grant", "Renewable Heat Incentive"],
-    color: "bg-blue-100"
+    color: "bg-gray-100"
   },
   {
     title: "Battery Storage",
@@ -101,7 +101,7 @@ export default function Technology() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
@@ -326,7 +326,7 @@ export default function Technology() {
       </section>
 
               {/* CTA Section */}
-        <section className="py-20 bg-[#135872]">
+        <section className="py-20 bg-black">
           <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
               Which Technology is Right for You?
@@ -335,7 +335,7 @@ export default function Technology() {
               Our experts will assess your property, energy usage, and goals to recommend the perfect renewable energy solution. 
               Book your free consultation today.
             </p>
-            <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium">
+            <Button className="bg-white text-black px-10 py-6 rounded-full text-lg font-medium">
               Get Technology Recommendations
             </Button>
           </div>
@@ -346,7 +346,7 @@ export default function Technology() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-black text-lg font-normal mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
@@ -372,7 +372,6 @@ export default function Technology() {
             <div>
               <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
               </div>

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Header from "@/components/Header";
-import { MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle } from "lucide-react";
 
 export default function Consultation() {
   return (
@@ -10,7 +10,7 @@ export default function Consultation() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
@@ -152,18 +152,10 @@ export default function Consultation() {
               
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <Phone className="w-6 h-6 text-tryba-aqua-deep" />
-                  <div>
-                    <div className="font-medium text-tryba-aqua-deep">Phone</div>
-                    <div className="text-tryba-dove-gray">01865 595 264</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
                   <Mail className="w-6 h-6 text-tryba-aqua-deep" />
                   <div>
                     <div className="font-medium text-tryba-aqua-deep">Email</div>
-                    <div className="text-tryba-dove-gray">hello@cozyhomesolutions.co.uk</div>
+                    <div className="text-tryba-dove-gray">hello@happyhome.co.uk</div>
                   </div>
                 </div>
                 
@@ -247,7 +239,7 @@ export default function Consultation() {
                   />
                 </div>
                 
-                <Button className="w-full bg-[#135872] text-white py-6 rounded-full text-lg">
+                <Button className="w-full bg-black text-white py-6 rounded-full text-lg">
                   Book Free Consultation
                 </Button>
                 
@@ -262,7 +254,7 @@ export default function Consultation() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Start Your Renewable Energy Journey?
@@ -270,7 +262,7 @@ export default function Consultation() {
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
             Book your free consultation today and let our experts guide you to the perfect renewable energy solution.
           </p>
-          <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium">
+          <Button className="bg-white text-black px-10 py-6 rounded-full text-lg font-medium">
             Book Your Free Consultation
           </Button>
         </div>
@@ -281,7 +273,7 @@ export default function Consultation() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-black text-lg font-normal mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
@@ -307,7 +299,6 @@ export default function Consultation() {
             <div>
               <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
               </div>

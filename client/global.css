@@ -18,17 +18,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 8%;
 
-    --primary: 177 100% 17%;
+    --primary: 0 0% 0%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 177 35% 92%;
-    --secondary-foreground: 177 100% 17%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 42%;
 
     --accent: 53 100% 64%;
-    --accent-foreground: 177 100% 17%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -40,14 +40,14 @@
     --radius: 0.75rem;
 
     /* Tryba Solar brand colors */
-    --tryba-aqua-deep: 177 100% 17%;
-    --tryba-cyprus: 179 100% 14%;
+    --tryba-aqua-deep: 0 0% 0%;
+    --tryba-cyprus: 0 0% 0%;
     --tryba-dove-gray: 0 0% 42%;
     --tryba-boulder: 0 0% 46%;
     --tryba-alto: 0 0% 85%;
     --tryba-cod-gray: 0 0% 8%;
     --tryba-yellow: 53 100% 64%;
-    --tryba-cyan-light: 177 35% 92%;
+    --tryba-cyan-light: 0 0% 96%;
     --tryba-cream: 48 29% 88%;
 
     --sidebar-background: 0 0% 98%;

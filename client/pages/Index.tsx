@@ -69,12 +69,12 @@ export default function Index() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-white text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight mb-5 uppercase">
               Welcome to<br />
-              Cozy Home Solutions
+              HAPPY HOME
             </h1>
             <p className="text-white/95 text-base lg:text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
               One of the UK's most trusted home insulation companies. Improve comfort, lower energy bills, and future proof your property.
             </p>
-            <Button className="bg-white text-[#135872] hover:bg-white/95 px-8 py-4 rounded-full text-base font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+            <Button className="bg-white text-black hover:bg-white/95 px-8 py-4 rounded-full text-base font-semibold transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
               Get Free Quote
             </Button>
           </div>
@@ -87,10 +87,10 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 flex items-center justify-center mb-4">
-                <ShieldCheck className="w-10 h-10 text-[#135872]" />
+                <ShieldCheck className="w-10 h-10 text-black" />
               </div>
               <div>
-                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                <h3 className="text-black text-xl font-medium mb-2">
                   20+ Years Experience
                 </h3>
                 <p className="text-tryba-dove-gray text-base">
@@ -101,10 +101,10 @@ export default function Index() {
             
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 flex items-center justify-center mb-4">
-                <Home className="w-10 h-10 text-[#135872]" />
+                <Home className="w-10 h-10 text-black" />
               </div>
               <div>
-                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                <h3 className="text-black text-xl font-medium mb-2">
                   Lower Energy Bills
                 </h3>
                 <p className="text-tryba-dove-gray text-base">
@@ -115,10 +115,10 @@ export default function Index() {
             
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 flex items-center justify-center mb-4">
-                <Sun className="w-10 h-10 text-[#135872]" />
+                <Sun className="w-10 h-10 text-black" />
               </div>
               <div>
-                <h3 className="text-[#135872] text-xl font-medium mb-2">
+                <h3 className="text-black text-xl font-medium mb-2">
                   Solar & Insulation
                 </h3>
                 <p className="text-tryba-dove-gray text-base">
@@ -135,7 +135,7 @@ export default function Index() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="mb-6">
             <span className="block text-xs tracking-widest text-tryba-dove-gray uppercase mb-2">Our Services</span>
-            <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+            <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight">
               High-Performance Insulation Solutions
             </h2>
             <p className="text-tryba-dove-gray text-lg mt-4 max-w-3xl">
@@ -239,7 +239,7 @@ export default function Index() {
                         "Free quote & survey",
                       ].map((item) => (
                         <div key={item} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-[#135872] mt-1" />
+                          <Check className="w-5 h-5 text-black mt-1" />
                           <span className="text-tryba-dove-gray">{item}</span>
                         </div>
                       ))}
@@ -259,7 +259,7 @@ export default function Index() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-6">
+              <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight mb-6">
                 The Solar Solution
               </h2>
               <p className="text-tryba-dove-gray text-lg leading-relaxed mb-6">
@@ -270,23 +270,23 @@ export default function Index() {
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">450kW Bi-Facial Black on Black Panels</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Modula Lithium-Ion Battery System</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">30 Year Panel Warranty / 10 Year Battery Warranty</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Flexible Monthly Payments from £75/month</span>
                 </div>
               </div>
-              <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+              <Button className="bg-black text-white px-10 py-6 rounded-full">
                 Get Instant Solar Quote
               </Button>
             </div>
@@ -297,8 +297,8 @@ export default function Index() {
                 className="w-full h-[500px] object-cover rounded-xl shadow-lg"
               />
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg p-6 max-w-sm">
-                <h3 className="text-xl font-medium text-[#135872] mb-2">Easy, Affordable Solar</h3>
-                <p className="text-2xl font-bold text-[#135872] mb-1">£0 UPFRONT</p>
+                <h3 className="text-xl font-medium text-black mb-2">Easy, Affordable Solar</h3>
+                <p className="text-2xl font-bold text-black mb-1">£0 UPFRONT</p>
                 <p className="text-lg text-tryba-dove-gray mb-3">From £75 A Month</p>
                 <p className="text-xs text-tryba-dove-gray">12 Panels • 3.6kW Inverter • 5kW Battery • MCS Certified</p>
               </div>
@@ -314,7 +314,7 @@ export default function Index() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-6">
+              <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight mb-6">
                 Boarding Lofts The Easy Way
               </h2>
               <p className="text-tryba-dove-gray text-xl leading-relaxed mb-6">
@@ -325,23 +325,23 @@ export default function Index() {
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Meets All Loft Boarding Regulations</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Proper Insulation Protection</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Structural Safety Guaranteed</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-[#135872] mt-1" />
+                  <Check className="w-5 h-5 text-black mt-1" />
                   <span className="text-tryba-dove-gray">Cost-Effective Storage Solution</span>
                 </div>
               </div>
-              <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+              <Button className="bg-black text-white px-10 py-6 rounded-full">
                 Learn More
               </Button>
             </div>
@@ -361,11 +361,11 @@ export default function Index() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight mb-4">
+              <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight mb-4">
                 With Over 20 Years Experience Specialising in Insulation
               </h2>
               <p className="text-tryba-dove-gray text-xl leading-relaxed">
-                You can trust Cozy Home Solutions to aid your home improvement journey
+                You can trust HAPPY HOME to aid your home improvement journey
               </p>
             </div>
             <div className="lg:pl-20 text-center lg:text-left">
@@ -383,7 +383,7 @@ export default function Index() {
       {/* Consultation Section */}
       <section className="py-12 lg:py-20">
         <div className="max-w-[98vw] mx-auto px-4 lg:px-8">
-          <div className="bg-[#135872] rounded-xl p-6 lg:p-20">
+          <div className="bg-black rounded-xl p-6 lg:p-20">
             <div className="grid lg:grid-cols-2 gap-4 lg:gap-8 mb-8 lg:mb-16">
               <img 
                 src="/1-small.jpg"
@@ -404,10 +404,10 @@ export default function Index() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-white text-base lg:text-xl leading-relaxed mb-6 lg:mb-8 text-center">
-                  Whether you're exploring wall insulation, thermal insulation, solar panels for your home, or a complete energy upgrade, we're here to help. We guarantee to beat any like-for-like quote – that's our Cozy Promise.
+                  Whether you're exploring wall insulation, thermal insulation, solar panels for your home, or a complete energy upgrade, we're here to help. We guarantee to beat any like-for-like quote.
                 </p>
                 <div className="text-center space-y-4">
-                  <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium hover:bg-gray-100">
+                  <Button className="bg-white text-black px-10 py-6 rounded-full text-lg font-medium hover:bg-gray-100">
                     Get Free Quote & Survey
                   </Button>
                   <p className="text-white text-sm">
@@ -448,13 +448,13 @@ export default function Index() {
                   onClick={() => setSelectedStep(step.id)}
                 >
                   <span className={`text-base pt-2 font-medium ${
-                    selectedStep === step.id ? 'text-[#135872]' : 'text-tryba-dove-gray'
+                    selectedStep === step.id ? 'text-black' : 'text-tryba-dove-gray'
                   }`}>
                     {String(step.id).padStart(2, '0')}
                   </span>
                   <div className="flex-1">
                     <h3 className={`text-3xl font-normal mb-4 ${
-                      selectedStep === step.id ? 'text-[#135872]' : 'text-tryba-dove-gray'
+                      selectedStep === step.id ? 'text-black' : 'text-tryba-dove-gray'
                     }`}>
                       {step.title}
                     </h3>
@@ -476,7 +476,7 @@ export default function Index() {
       <section className="border-b border-tryba-alto py-20">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+            <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight">
               What is our SuperFOIL Solution?
             </h2>
             <p className="text-tryba-dove-gray text-xl mt-6 max-w-4xl">
@@ -525,7 +525,7 @@ export default function Index() {
           </div>
           
           <div className="text-center">
-            <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+            <Button className="bg-black text-white px-10 py-6 rounded-full">
               Learn More About SuperFOIL
             </Button>
           </div>
@@ -537,7 +537,7 @@ export default function Index() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 mb-16">
             <div>
-              <h2 className="text-[#135872] text-4xl lg:text-5xl font-normal leading-tight">
+              <h2 className="text-black text-4xl lg:text-5xl font-normal leading-tight">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -576,8 +576,8 @@ export default function Index() {
                   answer: "Our solar panels come with a 30-year warranty, while batteries and inverters have 10-year warranties. All installations are MCS and HIES certified. We also offer ongoing maintenance and support packages to ensure your system performs optimally for years to come."
                 },
                 {
-                  question: "Why choose Cozy Home Solutions?",
-                  answer: "With 20+ years experience, we're one of the UK's most trusted insulation companies. We're Fox Elite Installers, offer a price-match guarantee (the Cozy Promise), use only premium materials like SupaBead, HYBRIS, and SuperFOIL, and provide comprehensive service from free surveys to ongoing maintenance and support."
+                  question: "Why choose HAPPY HOME?",
+                  answer: "With 20+ years experience, we're one of the UK's most trusted insulation companies. We're Fox Elite Installers, offer a price-match guarantee, use only premium materials like SupaBead, HYBRIS, and SuperFOIL, and provide comprehensive service from free surveys to ongoing maintenance and support."
                 }
               ].map((item, index) => (
                 <div key={index} className="border-b border-tryba-alto last:border-b-0">
@@ -604,7 +604,7 @@ export default function Index() {
             </div>
             
             <div className="text-center">
-                                                     <Button className="bg-[#135872] text-white px-10 py-6 rounded-full">
+                                                     <Button className="bg-black text-white px-10 py-6 rounded-full">
               View FAQ
             </Button>
             </div>
@@ -613,14 +613,14 @@ export default function Index() {
       </section>
 
       {/* Accreditations Section */}
-      <section className="bg-[#135872] py-20">
+      <section className="bg-black py-20">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-white text-3xl lg:text-4xl font-normal mb-4">
               Accreditations & Certifications
             </h2>
             <p className="text-white text-lg max-w-3xl mx-auto">
-              Cozy Home Solutions is proud to be MCS certified, HIES protected, and a Fox Elite Installer. We're fully accredited and regulated by the Financial Conduct Authority.
+              HAPPY HOME is proud to be MCS certified, HIES protected, and a Fox Elite Installer. We're fully accredited and regulated by the Financial Conduct Authority.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -641,11 +641,11 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#135872] border-t border-[#0d4557]">
+      <footer className="bg-black border-t border-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-white text-lg font-semibold mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-white text-lg font-semibold mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-white/80 text-xl hover:text-white">Home</a>
                 <a href="#" className="block text-white/80 text-xl hover:text-white">Insulation</a>
@@ -671,8 +671,7 @@ export default function Index() {
             <div>
               <h4 className="text-white text-lg font-semibold mb-6">Contact Us</h4>
               <div className="space-y-4">
-                <a href="tel:08006889666" className="block text-white/80 text-xl hover:text-white">0800 688 9666</a>
-                <a href="mailto:hello@cozyhomesolutions.co.uk" className="block text-white/80 text-xl hover:text-white">hello@cozyhomesolutions.co.uk</a>
+                <a href="mailto:hello@happyhome.co.uk" className="block text-white/80 text-xl hover:text-white">hello@happyhome.co.uk</a>
                 <p className="text-white/80 text-base">Unit 2, Old Station Yard</p>
                 <p className="text-white/80 text-base">Watlington Road, Cowley</p>
                 <p className="text-white/80 text-base">Oxford, OX4 6FE</p>
@@ -684,7 +683,7 @@ export default function Index() {
           <div className="border-t border-white/20 mt-12 pt-8">
             <div className="text-center space-y-4">
               <p className="text-white/70 text-sm">
-                Cozy Home Solutions Ltd is an appointed representative of HTG Finance Limited which is authorised and regulated by the Financial Conduct Authority.
+                HAPPY HOME Ltd is an appointed representative of HTG Finance Limited which is authorised and regulated by the Financial Conduct Authority.
               </p>
               <p className="text-white/70 text-sm">
                 Registered in England No: 12245890 | VAT Registration No: 339543185

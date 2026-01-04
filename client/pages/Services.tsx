@@ -47,7 +47,7 @@ export default function Services() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
@@ -77,7 +77,7 @@ export default function Services() {
             {services.map((service, index) => (
               <div key={index} className="bg-white border border-tryba-alto rounded-xl p-8 hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-medium text-[#135872] mb-4">
+                <h3 className="text-2xl font-medium text-black mb-4">
                   {service.title}
                 </h3>
                 <p className="text-tryba-dove-gray mb-6">
@@ -86,7 +86,7 @@ export default function Services() {
                 <ul className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-[#135872] flex-shrink-0" />
+                      <Check className="w-5 h-5 text-black flex-shrink-0" />
                       <span className="text-tryba-dove-gray">{feature}</span>
                     </li>
                   ))}
@@ -97,12 +97,12 @@ export default function Services() {
         </div>
       </section>
 
-      {/* The Cozy Home Solutions Way */}
+      {/* The HAPPY HOME Way */}
       <section className="py-20 bg-tryba-cyan-light">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-normal text-tryba-cyprus mb-4">
-              The Cozy Home Solutions Way
+              The HAPPY HOME Way
             </h2>
             <p className="text-xl text-tryba-dove-gray max-w-3xl mx-auto">
               Maintaining cooperative values in a very competitive industry requires a unique approach to business. 
@@ -113,9 +113,9 @@ export default function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                                  <span className="text-2xl font-bold text-[#135872]">R</span>
+                                  <span className="text-2xl font-bold text-black">R</span>
               </div>
-                              <h3 className="text-xl font-medium text-[#135872] mb-3">
+                              <h3 className="text-xl font-medium text-black mb-3">
                   Responsible
                 </h3>
               <p className="text-tryba-dove-gray">
@@ -126,9 +126,9 @@ export default function Services() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                                  <span className="text-2xl font-bold text-[#135872]">E</span>
+                                  <span className="text-2xl font-bold text-black">E</span>
               </div>
-                              <h3 className="text-xl font-medium text-[#135872] mb-3">
+                              <h3 className="text-xl font-medium text-black mb-3">
                   Effective
                 </h3>
               <p className="text-tryba-dove-gray">
@@ -139,9 +139,9 @@ export default function Services() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                                  <span className="text-2xl font-bold text-[#135872]">C</span>
+                                  <span className="text-2xl font-bold text-black">C</span>
               </div>
-                              <h3 className="text-xl font-medium text-[#135872] mb-3">
+                              <h3 className="text-xl font-medium text-black mb-3">
                   Competent
                 </h3>
               <p className="text-tryba-dove-gray">
@@ -152,9 +152,9 @@ export default function Services() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-tryba-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                                  <span className="text-2xl font-bold text-[#135872]">O</span>
+                                  <span className="text-2xl font-bold text-black">O</span>
               </div>
-                              <h3 className="text-xl font-medium text-[#135872] mb-3">
+                              <h3 className="text-xl font-medium text-black mb-3">
                   Organised
                 </h3>
               <p className="text-tryba-dove-gray">
@@ -185,50 +185,50 @@ export default function Services() {
                   <span className="text-tryba-dove-gray">Oxfordshire and surrounding counties</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-[#135872]" />
+                  <Check className="w-5 h-5 text-black" />
                   <span className="text-tryba-dove-gray">Urban and rural installations</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-[#135872]" />
+                  <Check className="w-5 h-5 text-black" />
                   <span className="text-tryba-dove-gray">Residential and commercial projects</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="w-5 h-5 text-[#135872]" />
+                  <Check className="w-5 h-5 text-black" />
                   <span className="text-tryba-dove-gray">New builds and retrofit installations</span>
                 </div>
               </div>
             </div>
             <div className="lg:pl-8">
               <div className="bg-tryba-cyan-light rounded-xl p-8">
-                <h3 className="text-2xl font-medium text-[#135872] mb-6">
-                  Why Choose Cozy Home Solutions?
+                <h3 className="text-2xl font-medium text-black mb-6">
+                  Why Choose HAPPY HOME?
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-[#135872] mt-1 flex-shrink-0" />
+                    <ArrowRight className="w-5 h-5 text-black mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-[#135872]">Worker's Cooperative</div>
+                      <div className="font-medium text-black">Worker's Cooperative</div>
                       <div className="text-tryba-dove-gray text-sm">Every team member has a stake in your success</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-[#135872] mt-1 flex-shrink-0" />
+                    <ArrowRight className="w-5 h-5 text-black mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-[#135872]">15+ Years Experience</div>
+                      <div className="font-medium text-black">15+ Years Experience</div>
                       <div className="text-tryba-dove-gray text-sm">Hundreds of successful installations</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-[#135872] mt-1 flex-shrink-0" />
+                    <ArrowRight className="w-5 h-5 text-black mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-[#135872]">MCS Certified</div>
+                      <div className="font-medium text-black">MCS Certified</div>
                       <div className="text-tryba-dove-gray text-sm">Quality assured installations</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-[#135872] mt-1 flex-shrink-0" />
+                    <ArrowRight className="w-5 h-5 text-black mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-[#135872]">Ongoing Support</div>
+                      <div className="font-medium text-black">Ongoing Support</div>
                       <div className="text-tryba-dove-gray text-sm">We're here for the lifetime of your system</div>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Get Started?
@@ -249,7 +249,7 @@ export default function Services() {
             Our team is ready to help you explore renewable energy options for your home or business. 
             Get in touch today for your free, no-obligation consultation.
           </p>
-          <Button className="bg-white text-[#135872] px-10 py-6 rounded-full text-lg font-medium">
+          <Button className="bg-white text-black px-10 py-6 rounded-full text-lg font-medium">
             Book Your Free Consultation
           </Button>
         </div>
@@ -260,7 +260,7 @@ export default function Services() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-black text-lg font-normal mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
@@ -286,7 +286,6 @@ export default function Services() {
             <div>
               <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
               </div>

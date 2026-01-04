@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Header from "@/components/Header";
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Mail, Clock, MessageCircle } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -10,15 +10,15 @@ export default function Contact() {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-normal text-white mb-6">
               Contact Us
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Thank you for your interest in Cozy Home Solutions. Feel free to reach out and open up a conversation 
-              using the phone number below, the contact form, or via our chatbot.
+              Thank you for your interest in HAPPY HOME. Feel free to reach out and open up a conversation 
+              using the contact form or via our chatbot.
             </p>
           </div>
         </div>
@@ -41,25 +41,11 @@ export default function Contact() {
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-tryba-yellow rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-tryba-aqua-deep" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-tryba-aqua-deep mb-2">Phone</h3>
-                    <p className="text-tryba-dove-gray mb-2">01865 595 264</p>
-                    <p className="text-sm text-tryba-boulder">
-                      Our preferred method of initial contact. We're available during business hours 
-                      to discuss your renewable energy needs.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-tryba-yellow rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-tryba-aqua-deep" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-tryba-aqua-deep mb-2">Email</h3>
-                    <p className="text-tryba-dove-gray mb-2">hello@cozyhomesolutions.co.uk</p>
+                    <p className="text-tryba-dove-gray mb-2">hello@happyhome.co.uk</p>
                     <p className="text-sm text-tryba-boulder">
                       Send us detailed information about your project and we'll get back to you 
                       within 24 hours.
@@ -197,14 +183,14 @@ export default function Contact() {
                       required
                     />
                     <span className="text-sm text-tryba-dove-gray">
-                      I agree to Cozy Home Solutions's privacy policy and consent to being contacted about my inquiry. 
+                      I agree to HAPPY HOME's privacy policy and consent to being contacted about my inquiry. 
                       I understand my information will only be used to respond to my request and will 
                       not be shared with third parties. *
                     </span>
                   </label>
                 </div>
                 
-                            <Button className="w-full bg-[#135872] text-white py-6 rounded-full text-lg font-medium">
+                            <Button className="w-full bg-black text-white py-6 rounded-full text-lg font-medium">
               Send Message
             </Button>
                 
@@ -317,7 +303,6 @@ export default function Contact() {
                 Quick Response
               </h3>
               <div className="space-y-2 text-tryba-dove-gray">
-                <p><strong>Phone:</strong> Immediate response during business hours</p>
                 <p><strong>Email:</strong> Response within 24 hours</p>
                 <p><strong>Form:</strong> Response within 24 hours</p>
                 <p><strong>Emergency:</strong> Leave message for next day callback</p>
@@ -328,7 +313,7 @@ export default function Contact() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#135872]">
+      <section className="py-20 bg-black">
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-normal text-white mb-6">
             Ready to Start Your Renewable Energy Journey?
@@ -338,12 +323,9 @@ export default function Contact() {
             the best renewable energy solutions for your home or business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-[#135872] px-8 py-6 rounded-full text-lg font-medium">
-              Call: 01865 595 264
-            </Button>
             <Button 
               variant="outline" 
-              className="bg-white text-[#135872] border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
+              className="bg-white text-black border-white hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-medium"
             >
               Book Free Consultation
             </Button>
@@ -356,7 +338,7 @@ export default function Contact() {
         <div className="max-w-[98vw] mx-auto px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-black text-lg font-normal mb-6">Cozy Home Solutions</h4>
+              <h4 className="text-black text-lg font-normal mb-6">HAPPY HOME</h4>
               <div className="space-y-4">
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">About Us</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Projects</a>
@@ -382,7 +364,6 @@ export default function Contact() {
             <div>
               <h4 className="text-black text-lg font-normal mb-6">Contact & Support</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">01865 595 264</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Oxford, OX2 6QH</a>
                 <a href="#" className="block text-tryba-dove-gray text-xl hover:text-tryba-aqua-deep">Free Consultation</a>
               </div>
